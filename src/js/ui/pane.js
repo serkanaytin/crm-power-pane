@@ -268,7 +268,7 @@ $(function () {
                                     "Guid of current record.",
                                     [{
                                         label: "Record Id",
-                                        value: Xrm.Page.data.entity.getId()
+                                        value: Xrm.Page.data.entity.getId().substring(1,37)
                                     }]);
                 } catch (e) {
                     CrmPowerPane.Errors.WrongPageWarning();
